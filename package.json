@@ -1,0 +1,51 @@
+{
+  "name": "MTProgressKit",
+  "version": "1.0.0",
+  "description": "React progress components kit with circular and line progress bars",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "progress",
+    "circular",
+    "line",
+    "progress-bar",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-css-only": "^4.0.0",
+    "typescript": "^5.0.0",
+    "tslib": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/progress-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/progress-kit/issues"
+  },
+  "homepage": "https://github.com/yourusername/progress-kit#readme"
+} 
