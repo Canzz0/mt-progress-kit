@@ -22,7 +22,7 @@ const ProviderProgress: React.FC<ProviderProgressProps> = ({ height = '4px', bgC
       if(newUrl !== currentUrlRef.current){
          currentUrlRef.current = newUrl
          
-         // State güncellemelerini setTimeout ile geciktir
+         // State güncellemeleri
          setTimeout(() => {
             setProgress(true)
             setIsLoading(true)
@@ -36,7 +36,7 @@ const ProviderProgress: React.FC<ProviderProgressProps> = ({ height = '4px', bgC
    }, [])
 
    useEffect(() => {
-      // İlk yüklemede currentUrl'i ayarla
+      // İlk yüklemede 
       currentUrlRef.current = window.location.href
 
       // Sayfa yüklendiğinde loading state'ini true yap

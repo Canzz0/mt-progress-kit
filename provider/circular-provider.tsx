@@ -5,7 +5,6 @@ interface CircularProviderBarProps {
   height?: string
 }
 
-// Basit progress bar bileşeni
 const CircularProviderBar: React.FC<CircularProviderBarProps> = ({bgColor='#007bff', height='100px'}) => {
    return (
       <div style={{
@@ -18,7 +17,7 @@ const CircularProviderBar: React.FC<CircularProviderBarProps> = ({bgColor='#007b
          height: '100%',
          backgroundColor: 'rgba(0, 0, 0, 0.6)',
          backdropFilter: 'blur(10px)',
-         WebkitBackdropFilter: 'blur(10px)', // Safari desteği
+         WebkitBackdropFilter: 'blur(10px)',
          zIndex: 9999,
       }}>
          

@@ -1,16 +1,16 @@
 # Progress Kit
 
-React için geliştirilmiş progress bar bileşenleri kiti. Otomatik sayfa geçişlerini takip eden provider ve manuel progress bileşenleri içerir.
+A React progress bar components kit. Includes provider for automatic page transitions and manual progress components.
 
-## Kurulum
+## Installation
 
 ```bash
 npm install progress-kit
 ```
 
-## Kullanım
+## Usage
 
-### Progress Provider (Otomatik Sayfa Geçişleri)
+### Progress Provider (Automatic Page Transitions)
 
 ```jsx
 import { ProgressProvider } from 'progress-kit';
@@ -23,13 +23,14 @@ function App() {
         height="4px" 
         bgColor="#007bff"
       />
-      {/* Uygulama içeriği */}
+      {/* Application content */}
     </div>
   );
 }
 ```
+![Progress Kit Demo](./assets/provider.png)
 
-### Circular Progress (Manuel)
+### Circular Progress (Manual)
 
 ```jsx
 import { CircularProgress } from 'progress-kit';
@@ -45,7 +46,7 @@ function App() {
 }
 ```
 
-### Line Progress (Manuel)
+### Line Progress (Manual)
 
 ```jsx
 import { LineProgress } from 'progress-kit';
@@ -93,38 +94,8 @@ function App() {
 }
 ```
 
-## Props
+![Progress Kit Demo](./assets/value.png)
 
-### ProgressProvider
-- `type`: Progress tipi (`'line'` | `'circular'`)
-- `height`: Yükseklik (line için) veya boyut (circular için)
-- `bgColor`: Arka plan rengi
-- `place`: Konum (`'top'` | `'bottom'`)
-
-### CircularProgress
-- `value`: Progress değeri (0-100)
-- `size`: Boyut (`'small'` | `'medium'` | `'large'`)
-- `variant`: Renk varyantı (`'primary'` | `'secondary'` | `'success'` | `'warning'` | `'danger'`)
-- `textColor`: Metin rengi (opsiyonel)
-
-### LineProgress
-- `value`: Progress değeri (0-100)
-- `size`: Boyut (`'small'` | `'medium'` | `'large'`)
-- `variant`: Renk varyantı (`'primary'` | `'secondary'` | `'success'` | `'warning'` | `'danger'`)
-- `textColor`: Metin rengi (opsiyonel)
-
-### HalfProgress
-- `value`: Progress değeri (0-100)
-- `size`: Boyut (`'small'` | `'medium'` | `'large'`)
-- `variant`: Renk varyantı (`'primary'` | `'secondary'` | `'success'` | `'warning'` | `'danger'`)
-- `textColor`: Metin rengi (opsiyonel)
-
-### ProgressBar
-- `value`: Progress değeri (0-100)
-- `size`: Boyut (`'small'` | `'medium'` | `'large'`)
-- `variant`: Renk varyantı (`'primary'` | `'secondary'` | `'success'` | `'warning'` | `'danger'`)
-- `textColor`: Metin rengi (opsiyonel)
-
-## Lisans
+## License
 
 MIT 
