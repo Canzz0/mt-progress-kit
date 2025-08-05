@@ -5,15 +5,18 @@ A React progress bar components kit. Includes provider for automatic page transi
 ## Installation
 
 ```bash
-npm install progress-kit
+npm install mt-progress-kit
 ```
 
 ## Usage
 
 ### Progress Provider (Automatic Page Transitions)
 
+
 ```jsx
-import { ProgressProvider } from 'progress-kit';
+'use client';
+
+import { ProgressProvider } from 'mt-progress-kit';
 
 function App() {
   return (
@@ -23,17 +26,43 @@ function App() {
         height="4px" 
         bgColor="#007bff"
       />
-      {/* Application content */}
+      {/*content */}
     </div>
   );
 }
+
+
+
 ```
 ![Progress Kit Demo](./assets/provider.png)
+
+### Layout Example
+
+```jsx
+'use client';
+
+import { ProgressProvider } from 'mt-progress-kit';
+
+function Layout({ children }) {
+  return (
+     <html lang="en">
+      <body>
+      <ProgressProvider 
+        type="line" 
+        height="3px" 
+        bgColor="#007bff"
+      />
+      {children}
+    </body>
+    </html>
+  );
+}
+```
 
 ### Circular Progress (Manual)
 
 ```jsx
-import { CircularProgress } from 'progress-kit';
+import { CircularProgress } from 'mt-progress-kit';
 
 function App() {
   return (
@@ -49,7 +78,7 @@ function App() {
 ### Line Progress (Manual)
 
 ```jsx
-import { LineProgress } from 'progress-kit';
+import { LineProgress } from 'mt-progress-kit';
 
 function App() {
   return (
@@ -65,7 +94,7 @@ function App() {
 ### Half Circular Progress
 
 ```jsx
-import { HalfProgress } from 'progress-kit';
+import { HalfProgress } from 'mt-progress-kit';
 
 function App() {
   return (
@@ -73,22 +102,6 @@ function App() {
       value={50} 
       size="medium"
       variant="warning"
-    />
-  );
-}
-```
-
-### Progress Bar
-
-```jsx
-import { ProgressBar } from 'progress-kit';
-
-function App() {
-  return (
-    <ProgressBar 
-      value={80} 
-      size="large"
-      variant="danger"
     />
   );
 }
