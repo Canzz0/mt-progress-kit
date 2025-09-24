@@ -1,6 +1,6 @@
 {
-  "name": "MTProgressKit",
-  "version": "1.0.0",
+  "name": "mt-progress-kit",
+  "version": "1.0.1",
   "description": "React progress components kit with circular and line progress bars",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -47,5 +47,8 @@
   "bugs": {
     "url": "https://github.com/Canzz0/mt-progress-kit/issues"
   },
-  "homepage": "https://github.com/Canzz0/mt-progress-kit#readme"
+  "homepage": "https://github.com/Canzz0/mt-progress-kit#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 } 
